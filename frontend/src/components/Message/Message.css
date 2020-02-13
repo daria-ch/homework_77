@@ -1,0 +1,22 @@
+.message {
+    border: 1px solid #b7c5d9;
+    background: #d6daf0;
+    margin: 5px auto 5px 0;
+    padding: 10px;
+}
+
+.name {
+    color: #117743;
+    font-weight: bold;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.time {
+    font-size: 12px;
+}
+
+.text {
+    padding-left: 30px;
+    font-size: 14px;
+}

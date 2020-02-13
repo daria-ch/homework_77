@@ -30,7 +30,8 @@ class App extends Component {
         };
 
         let toggleLink = {
-            display: 'block'
+            display: 'block',
+            textAlign: 'center'
         };
 
         if (this.state.toggle) {
@@ -38,14 +39,17 @@ class App extends Component {
                 display: 'block'
             };
             toggleLink = {
-                display: 'none'
+                display: 'none',
+                textAlign: 'center'
             };
         }
 
         const messages = this.props.messages.map(message => {
             return <Message key={message.id}
                             message={message.message}
-                            author={message.author}/>
+                            author={message.author}
+                            datetime={message.datetime}
+            />
         });
 
 

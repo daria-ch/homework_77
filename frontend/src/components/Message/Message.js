@@ -1,14 +1,18 @@
 import React from 'react';
-import {Media} from "reactstrap";
+import './Message.css';
 
 const Message = props => {
     return (
-        <Media body>
-            <Media heading>
-               {props.author}
-            </Media>
-            {props.message}
-        </Media>
+        <div className='message'>
+            <div>
+                <span className='name'>{props.author}</span>
+                <span className='time'>({props.datetime})</span>
+            </div>
+            <div className='text'>
+                {props.message}
+            </div>
+        </div>
+
     );
 };
 

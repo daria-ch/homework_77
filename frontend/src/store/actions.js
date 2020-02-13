@@ -10,23 +10,15 @@ export const postMessageSuccess = () => ({type: POST_MESSAGE_SUCCESS});
 
 
 export const fetchMessages = () => {
-    try {
-        return async dispatch => {
-            const response = await axiosApi.get('/messages');
-            dispatch(fetchMessagesSuccess(response.data));
-        }
-    } catch (error) {
-        console.error(error)
+    return async dispatch => {
+        const response = await axiosApi.get('/messages');
+        dispatch(fetchMessagesSuccess(response.data));
     }
 };
 
 export const postMessage = message => {
-    try {
-        return async dispatch => {
-            await axiosApi.post('/messages', message);
-            dispatch(postMessageSuccess());
-        }
-    } catch (error) {
-        console.error(error)
+    return async dispatch => {
+        await axiosApi.post('/messages', message);
+        dispatch(postMessageSuccess());
     }
 };
