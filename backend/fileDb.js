@@ -42,6 +42,7 @@ module.exports = {
     async getMessages() {
         return data;
     },
+
     async addMessage(message) {
         const date = new Date();
         const datetime = date.toISOString();
