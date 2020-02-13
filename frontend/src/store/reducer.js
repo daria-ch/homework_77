@@ -1,3 +1,5 @@
+import {FETCH_MESSAGES_SUCCESS} from "./actions";
+
 const initialState = {
     messages:[]
 };

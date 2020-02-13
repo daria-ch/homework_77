@@ -1,0 +1,17 @@
+.App {
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.App a {
+    font-weight: bold;
+    color: #34345c;
+}
+
+.App a:hover {
+    outline: none;
+    color: red;
+    text-decoration: none;
+}

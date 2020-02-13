@@ -1,0 +1,49 @@
+
+Form {
+    padding: 15px;
+    max-width: 50%;
+    margin: 15px auto;
+    position: relative;
+}
+
+Form textarea {
+    resize: none;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+Label {
+    font-weight: bold;
+    background: #98e;
+    margin-right: 5px;
+}
+
+.author {
+    width: 150px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.comment {
+    width: 150px;
+    padding: 18px 10px;
+    border: 1px solid #000;
+}
+
+.image {
+    width: 150px;
+    border: 1px solid #000;
+    padding: 2px 10px;
+}
+
+Button {
+    position: absolute;
+    bottom: 22px;
+    right: 15px;
+}
