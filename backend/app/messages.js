@@ -30,6 +30,14 @@ router.post('/', upload.single('image'), async (req, res) => {
     if (req.file) {
         message.image = req.file.filename;
     }
+    if (!message.message) {
+        return res.status(400).send('Error');
+    }
+
+    if (message.message === '') {
+        message.message = 'Anonymous'
+    }
+
     await fileDb.addMessage(message);
     res.send(req.body.id);
 });
