@@ -34,7 +34,7 @@ router.post('/', upload.single('image'), async (req, res) => {
         return res.status(400).send('Error');
     }
 
-    if (message.author === '') {
+    if (!message.author) {
         message.author = 'Anonymous'
     }
 
