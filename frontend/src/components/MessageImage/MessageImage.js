@@ -1,12 +1,9 @@
 import React from 'react';
-import axiosApi from "../../axios-api";
 
 const styles = {
-    float: 'left',
-    marginLeft: '20px',
-    marginRight: '20px',
-    marginTop: '3px',
-    marginBottom: '5px'
+    width: '100px',
+    height: '120px',
+    marginRight: '10px'
 };
 
 const MessageImage = props => {
@@ -14,7 +11,7 @@ const MessageImage = props => {
     let image = null;
 
     if (props.image) {
-        image = axiosApi + '/uploads/' + props.image;
+        image = 'http://localhost:8000/uploads/' + props.image;
         return <img alt="Thumb" src={image} style={styles} className="img-thumbnail"/>;
     }
 
