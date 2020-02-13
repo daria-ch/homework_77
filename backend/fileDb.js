@@ -43,7 +43,10 @@ module.exports = {
         return data;
     },
     async addMessage(message) {
+        const date = new Date();
+        const datetime = date.toISOString();
         message.id = nanoid();
+        message.datetime = datetime;
         data.push(message);
         await this.save();
     },
