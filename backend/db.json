@@ -1,0 +1,51 @@
+[
+  {
+    "author": "John Doe",
+    "message": "Hello, guys!",
+    "image": "",
+    "id": "DJWB7vewVS93LZn5SiEjV",
+    "datetime": "2020-02-13T14:15:24.597Z"
+  },
+  {
+    "author": "Anonymous",
+    "message": "Hello, you!",
+    "image": "",
+    "id": "igdLNAXRCLOlIdIIhhiqz",
+    "datetime": "2020-02-13T14:15:33.429Z"
+  },
+  {
+    "author": "Kate",
+    "message": "What a wonderful day!",
+    "image": "oTM2Q-BybbXpDDJ3SWK5z.jpg",
+    "id": "jgZ8uh6gLbz7_FIgoJoFd",
+    "datetime": "2020-02-13T14:15:50.539Z"
+  },
+  {
+    "author": "Anonymous",
+    "message": "Really? It's snowing outside...",
+    "image": "",
+    "id": "MzxFSxo5Ote1Kbxw5piwB",
+    "datetime": "2020-02-13T14:16:29.531Z"
+  },
+  {
+    "author": "Margo",
+    "message": "It's time to go in Paris",
+    "image": "sPbprwh7o8kKlmWxoR-sj.jpeg",
+    "id": "jGffd9JPhuOgwMIgQupvB",
+    "datetime": "2020-02-13T14:17:27.557Z"
+  },
+  {
+    "author": "Anonymous",
+    "message": "Oh, let's go!",
+    "image": "",
+    "id": "RR5h9ERA_4TTxU3uLrNit",
+    "datetime": "2020-02-13T14:17:42.767Z"
+  },
+  {
+    "author": "Nick",
+    "message": "You know that elephants are the world's largest land animal!",
+    "image": "do9BjwT41A6lnrDvi5JiX.jpg",
+    "id": "6fnavUZyMGqqXAfRW95Dz",
+    "datetime": "2020-02-13T14:18:40.461Z"
+  }
+]

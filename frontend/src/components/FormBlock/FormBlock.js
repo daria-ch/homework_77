@@ -4,11 +4,12 @@ import './FormBlock.css';
 
 class FormBlock extends Component {
 
+    inputKey = '';
+
     state = {
         author: '',
         message: '',
-        image: '',
-        inputKey: ''
+        image: ''
     };
 
     submitFormHandler = event => {
@@ -21,7 +22,8 @@ class FormBlock extends Component {
         });
 
         this.props.onSubmit(formData);
-        this.setState({author: '', message: '', image: '', inputKey: Date.now()});
+        this.setState({author: '', message: '', image: ''});
+        this.inputKey = Date.now()
     };
 
     inputChangeHandler = event => {
@@ -54,7 +56,7 @@ class FormBlock extends Component {
                 <FormGroup style={{marginBottom: 0}}>
                     <Label for="image" className='image'>File</Label>
                     <Input type="file" name="image" id="image"
-                           key={this.state.inputKey}
+                           key={this.inputKey}
                            onChange={this.fileChangeHandler}/>
                 </FormGroup>
                 <Button className='post' color="secondary" size="sm">Post</Button>
