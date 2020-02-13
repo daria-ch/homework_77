@@ -5,12 +5,14 @@
     text-align: center;
 }
 
-.App a {
+.link {
     font-weight: bold;
     color: #34345c;
+    background: transparent;
+    border: 0;
 }
 
-.App a:hover {
+.link:hover {
     outline: none;
     color: red;
     text-decoration: none;

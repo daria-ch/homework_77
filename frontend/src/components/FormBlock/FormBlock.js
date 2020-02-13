@@ -55,7 +55,7 @@ class FormBlock extends Component {
                     <Input type="file" name="image" id="image"
                            onChange={this.fileChangeHandler}/>
                 </FormGroup>
-                <Button color="secondary" size="sm">Post</Button>
+                <Button className='post' color="secondary" size="sm">Post</Button>
             </Form>
         );
     }

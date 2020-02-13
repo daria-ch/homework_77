@@ -42,7 +42,7 @@ Label {
     padding: 2px 10px;
 }
 
-Button {
+.post {
     position: absolute;
     bottom: 22px;
     right: 15px;
