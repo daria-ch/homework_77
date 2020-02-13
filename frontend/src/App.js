@@ -49,6 +49,7 @@ class App extends Component {
                             message={message.message}
                             author={message.author}
                             datetime={message.datetime}
+                            img={message.image}
             />
         });
 
