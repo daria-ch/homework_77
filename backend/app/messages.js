@@ -34,8 +34,8 @@ router.post('/', upload.single('image'), async (req, res) => {
         return res.status(400).send('Error');
     }
 
-    if (message.message === '') {
-        message.message = 'Anonymous'
+    if (message.author === '') {
+        message.author = 'Anonymous'
     }
 
     await fileDb.addMessage(message);
