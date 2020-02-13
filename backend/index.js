@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const products = require('./app/products');
+const messages = require('./app/messages');
 const fileDb = require('./fileDb');
 
 const app = express();
@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 app.use(express.static('public'));
 
-app.use('/products', products);
+app.use('/messages', messages);
 
 const run = async () => {
     await fileDb.init();

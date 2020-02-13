@@ -1,7 +1,7 @@
 const path = require('path');
 
 const express = require('express');
-const multer  = require('multer');
+const multer = require('multer');
 const nanoid = require('nanoid');
 
 const fileDb = require('../fileDb');
@@ -21,16 +21,16 @@ const upload = multer({storage});
 const router = express.Router();
 
 router.get('/', async (req, res) => {
-    const items = await fileDb.getItems();
-    res.send(items);
+    const messages = await fileDb.getMessages();
+    res.send(messages);
 });
 
 router.post('/', upload.single('image'), async (req, res) => {
-    const product = req.body;
+    const message = req.body;
     if (req.file) {
-        product.image = req.file.filename;
+        message.image = req.file.filename;
     }
-    await fileDb.addItem(product);
+    await fileDb.addMessage(message);
     res.send(req.body.id);
 });
 

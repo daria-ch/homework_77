@@ -39,15 +39,12 @@ module.exports = {
             data = [];
         }
     },
-    async getItems() {
+    async getMessages() {
         return data;
     },
-    async getItemById(id) {
-        return data.find(item => item.id === id);
-    },
-    async addItem(item) {
-        item.id = nanoid();
-        data.push(item);
+    async addMessage(message) {
+        message.id = nanoid();
+        data.push(message);
         await this.save();
     },
     async save() {
